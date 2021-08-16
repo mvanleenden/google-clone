@@ -3,10 +3,11 @@ import { ViewGridIcon } from "@heroicons/react/solid";
 
 import Avatar from "../components/Avatar";
 import SearchForm from "../components/SearchForm";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center h-screen">
       <Head>
         <title>Google</title>
       </Head>
@@ -23,8 +24,7 @@ export default function Home() {
         </div>
       </header>
       <SearchForm />
-
-      {/* Footer */}
+      <Footer />
     </div>
   );
 }

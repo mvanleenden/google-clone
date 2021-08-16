@@ -4,7 +4,7 @@ import { SearchIcon } from "@heroicons/react/outline";
 
 const SearchForm = () => {
   return (
-    <form className="flex flex-col items-center mt-44 flex-grow">
+    <form className="flex flex-col items-center mt-44 flex-grow w-4/5">
       <Image
         height={100}
         width={300}
