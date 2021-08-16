@@ -2,19 +2,20 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import Header from "../components/Header";
+import SearchResults from "../components/SearchResults";
 import { API_KEY, CONTEXT_KEY } from "../keys";
 import response from "../response";
 
 const SearchPage = ({ results }) => {
   const router = useRouter();
-  console.log(results);
+
   return (
     <div>
       <Head>
         <title>{router.query.term} - Google Search</title>
       </Head>
       <Header />
-      {/* Search Result */}
+      <SearchResults results={results} />
     </div>
   );
 };
