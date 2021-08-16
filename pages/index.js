@@ -2,6 +2,7 @@ import Head from "next/head";
 import { ViewGridIcon } from "@heroicons/react/solid";
 
 import Avatar from "../components/Avatar";
+import SearchForm from "../components/SearchForm";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           <Avatar url="https://media-exp1.licdn.com/dms/image/C4D03AQFtwkujs6QtyQ/profile-displayphoto-shrink_100_100/0/1552844207285?e=1634774400&v=beta&t=2BFefY90LV0zxl4fUsLKNtQJFeMnE9Vbd3PrPi93a58" />
         </div>
       </header>
-      {/* Body */}
+      <SearchForm />
 
       {/* Footer */}
     </div>
